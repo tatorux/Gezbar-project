@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Oswald:wght@200..700&display=swap');
+/* font-family: "Oswald", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* font-family: "Pacifico", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+/* font-family: "Platypi", serif; */
+
+:root{
+    --font-size-title:60px:
+    --font-size2-title:30px;
+    --primary-color:#8200FF;
+    --secondary-color:#1C1678;
+    --extra-color:#06CDFF;
+}
+
+body {
+    overflow-x: hidden;
+    align-items: center;
+    align-content: center;
+    vertical-align: baseline;
+}
+
+h1{
+    font-family: "Oswald", sans-serif; 
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Pacifico", cursive;
+}
+
+p,
+a,
+li,
+td,
+input,
+label {
+    font-family: "Platypi", serif;
+}
+
+nav{
+    background: var(--primary-color);
+}
+
+nav img{
+    width: 90px;
+    margin-right: 300px;
+}
+
+nav.bg-navefra ul li{
+    font-family: "Platypi", serif;
+    margin-right: 10px;
+}
+
+nav.bg-navefra ul li a{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    position: relative;
+    bottom: 2px;
+    left: 15px;
+    transition: .4s;
+}
+
+nav.bg-navefra ul li a::after{
+    width: 0;
+    height: 3px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-navefra ul li a:hover{
+    color: #000000;
+}
+
+nav.bg-navefra ul li a:hover::after{
+    width: 30%;
+    cursor: auto;
+    background: #000000;
+}
+
+
+
+/* HERO */
+
+#hero{
+    background: var(--secondary-color);
+    height: 530px;
+}
+
+.row{
+    align-items: center;
+}
+
+.info h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 90px;
+    top: 30px;
+    bottom: 2px;
+}
+
+.info p{
+    color: #ffffff;
+    font-weight: 400;  
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.info a{
+    border-radius: 10px;
+    font-size: 18px;
+    background: var(--primary-color);
+    border: 5px solid #000000;
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 25px;
+    transition: .4s;
+}
+
+.info a:hover{
+    border-color: #ffffff;
+    color: #ffffff;
+    background: var(--extra-color);
+}
+
+.cont-foto{
+    align-items: right;
+}
+
+.cont-foto img{
+    width: 450px;
+    margin-top: 160px;
+    margin-left: 25px;
+}
+
+
+
+/* ABOUT */
+
+#about{
+    align-items: center;
+    background: #8200FF;
+    height: 650px;
+}
+
+.cont-inf h2{
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.cont-inf p{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.sombra{
+    background: var(--extra-color);
+    width: 270px;
+    height: 350px;
+    top: 50px;
+    left: 60px;
+    position: relative;
+}
+
+.sombra img{
+    width: 270px;
+    height: 350px;
+    top: 35px;
+    left: -35px;
+    position: absolute;
+}
+
+
+
+
+/* VIDEOS */
+
+#videos{
+    background: var(--secondary-color);
+    height: 600px;
+}
+
+.cont-fotov img{
+    width: 500px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+}
+
+.cont-infov h3{
+    color: #ffffff;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.cont-infov p{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.cont-redes{
+    display: flex;
+}
+
+.cont-redes a img{
+    width: 70px;
+    margin-top: 20px;
+}
+
+.cont-redes a img:first-child{
+    margin-left: 20px;
+}
+
+
+
+
+/* SERVICIOS */
+
+#servicios{
+    background: var(--primary-color);
+}
+
+.cont-infos h2{
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.cont-infos p{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cont-infos img{
+    width: 60px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.cont-fotos img{
+    width: 500px;
+}
+
+
+
+
+
+
+/* CONTACT */
+
+#contacto{
+    background: var(--secondary-color);
+    display: flex;
+    text-align: center;
+}
+
+#contacto h2{
+    font-size: 60px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#contacto p{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#contacto p:nth-child(3){
+     margin-bottom: 40px;
+}
+
+#contacto p a{
+    text-decoration: none;
+    color: #06CDFF;
+}
+
+
+
+
+
+
+/* footer */
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    margin: 15px 0;
+    color: #3f3b3b;
+}
+
+
+
+
+
+
+
+/* TABLET */
+
+@media screen and (min-width:769px) and (max-width:992px){
+    nav img{
+        width: 80px;
+    }
+    nav.bg-navefra ul li a:hover::after{
+        width: 10%;
+    }
+    
+    /* hero */
+
+    #hero{
+        height: 680px;
+    }
+    .info{
+        text-align: center;
+    }
+    .info h1{
+        font-size: 70px;
+        margin: 10px 0;
+    }
+    .info p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .cont-foto img{
+        width: 300px;
+        margin-left: 190px;    
+    }
+    
+    
+    
+    /* ABOUT */
+
+    #about{
+        height: 700px;
+    }
+        
+    .cont-inf{
+        text-align: center;
+    }
+    .cont-inf h2{
+        font-size: 60px;
+        margin-top: 70px;
+    }
+    .sombra{
+        width: 200px;
+        height: 250px;
+        left: 200px;
+        position: relative;
+        top: 0;
+    }
+    
+    .sombra img{
+        width: 200px;
+        height: 250px;
+        top: px;
+        left: -35px;
+        position: absolute;
+    }
+    
+    
+    
+    
+    /* VIDEOS */
+    
+    #videos{
+        height: 650px;
+        text-align: center;
+    }
+    
+    .cont-fotov img{
+        width: 400px;
+        margin-top: 50px;
+    
+    }
+    
+    .cont-infov h3{
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .cont-infov p{
+        font-size: 20px;
+    }
+    
+    .cont-redes a img{
+        width: 70px;
+        margin-top: 20px;
+    }
+    
+    .cont-redes a img:first-child{
+        margin-left: 120px;
+    }
+    
+    
+    
+    
+    /* SERVICIOS */
+    
+    #servicios{
+        text-align: center;
+        height: 700px;
+    }
+    
+    .cont-infos h2{
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .cont-infos p{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .cont-infos img{
+        width: 70px;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .cont-fotos img{
+        width: 450px;
+    }
+    
+    
+    
+    
+    
+    
+    /* CONTACT */
+        
+    #contacto p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+    nav img{
+        width: 30px;
+    }
+    nav.bg-navefra ul li a:hover::after{
+        width: 10%;
+    }
+
+    /* HEADER */
+    nav img{
+        width: 60px;
+    }
+
+    /* HERO */
+    #hero{
+        height: 680px;
+    }
+    .info{
+        text-align: center;
+    }
+    .info h1{
+        font-size: 60px;
+        margin: 10px 0;
+    }
+    .info p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .cont-foto img{
+        width: 250px;
+        margin-left: 130px;    
+    }
+    
+    
+    
+    /* ABOUT */
+
+    #about{
+        height: 600px;
+    }
+        
+    .cont-inf{
+        text-align: center;
+    }
+    .cont-inf h2{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .sombra{
+        width: 150px;
+        height: 200px;
+        left: 160px;
+        position: relative;
+        top: 0;
+    }
+    
+    .sombra img{
+        width: 150px;
+        height: 200px;
+        top: 35px;
+        left: -35px;
+        position: absolute;
+    }
+    
+    
+    
+    
+    /* VIDEOS */
+    
+    #videos{
+        height: 550px;
+        text-align: center;
+    }
+    
+    .cont-fotov img{
+        width: 300px;
+        margin-top: 50px;
+    
+    }
+    
+    .cont-infov h3{
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .cont-infov p{
+        font-size: 18px;
+    }
+    
+    .cont-redes a img{
+        width: 50px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .cont-redes a img:first-child{
+        margin-left: 65px;
+    }
+    
+    
+    
+    /* SERVICIOS */
+    
+    #servicios{
+        text-align: center;
+        height: 700px;
+    }
+    
+    .cont-infos h2{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .cont-infos p{
+        font-size: 18px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .cont-infos img{
+        width: 50px;
+        margin-left: -45px;
+        margin-bottom: 30px;
+    }
+    
+    .cont-fotos img{
+        width: 350px;
+    }
+    
+    
+    
+    
+    
+    
+    /* CONTACT */
+        
+    #contacto p{
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+/* PHONE */
+
+@media screen and (max-width: 600px){
+    nav img{
+        width: 30px;
+        margin-left: 160px;
+    }
+    nav.bg-navefra ul li a:hover::after{
+        width: 10%;
+    }
+    /* HEADER */
+    nav img{
+        width: 50px;
+    }
+
+    /* HERO */
+    #hero{
+        height: 655px;
+    }
+    .info{
+        text-align: center;
+        align-content: center;
+    }
+    .info h1{
+        font-size: 50px;
+        margin: 10px 0;
+    }
+    .info p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .cont-foto img{
+        width: 200px;
+        margin-left: 100px;    
+    }
+    
+    
+    
+    /* ABOUT */
+
+    #about{
+        height: 550px;
+    }
+        
+    .cont-inf{
+        text-align: center;
+    }
+    .cont-inf h2{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .cont-inf p{
+        font-size: 16px;
+    }
+    .sombra{
+        width: 150px;
+        height: 200px;
+        left: 130px;
+        position: relative;
+        top: 0;
+    }
+    
+    .sombra img{
+        width: 150px;
+        height: 200px;
+        top: 35px;
+        left: -35px;
+        position: absolute;
+    }
+    
+    
+    
+    
+    /* VIDEOS */
+    
+    #videos{
+        height: 500px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .cont-fotov img{
+        width: 250px;
+        margin-top: 50px;
+    
+    }
+    
+    .cont-infov h3{
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .cont-infov p{
+        font-size: 18px;
+    }
+    
+    .cont-redes a img{
+        width: 40px;
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+    
+    .cont-redes a img:first-child{
+        margin-left: 50px;
+    }
+    
+    
+    
+    
+    /* SERVICIOS */
+    
+    #servicios{
+        text-align: center;
+        height: 550px;
+    }
+    
+    .cont-infos h2{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .cont-infos p{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .cont-infos img{
+        width: 50px;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    
+    .cont-fotos img{
+        width: 200px;
+    }
+    
+    
+    
+    
+    
+    
+    /* CONTACT */
+        
+    #contacto p{
+        font-size: 18px;
+    }
+}
