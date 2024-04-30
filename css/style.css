@@ -340,7 +340,8 @@ footer p{
 
     .cont-foto img{
         width: 300px;
-        margin-left: 190px;    
+        margin-left: 190px; 
+        margin-top: 30px;
     }
     
     
@@ -484,7 +485,8 @@ footer p{
 
     .cont-foto img{
         width: 250px;
-        margin-left: 130px;    
+        margin-left: 130px;  
+        margin-top: 30px;
     }
     
     
@@ -634,7 +636,8 @@ footer p{
 
     .cont-foto img{
         width: 200px;
-        margin-left: 100px;    
+        margin-left: 100px;  
+        margin-top: 20px;
     }
     
     
