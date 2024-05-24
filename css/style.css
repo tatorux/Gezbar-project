@@ -8,9 +8,9 @@
 :root{
     --font-size-title:60px:
     --font-size2-title:30px;
-    --primary-color:#8400ffe1;
-    --secondary-color:#261bbb;
-    --extra-color:#00d9ff;
+    --primary-color:#8200ff;
+    --secondary-color:#1c1678;
+    --extra-color:#00d0ff;
 }
 
 body {
