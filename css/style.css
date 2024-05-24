@@ -655,7 +655,7 @@ footer p{
     .cont-fotov img{
         width: 250px;
         margin-top: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     
     .cont-infov h3{
@@ -681,11 +681,6 @@ footer p{
     
     
     /* SERVICIOS */
-    
-    #servicios{
-        text-align: center;
-        height: 600px;
-    }
     
     .cont-infos h2{
         font-size: 40px;
