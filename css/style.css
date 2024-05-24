@@ -8,20 +8,25 @@
 :root{
     --font-size-title:60px:
     --font-size2-title:30px;
-    --primary-color:#8200FF;
-    --secondary-color:#1C1678;
-    --extra-color:#06CDFF;
+    --primary-color:#8400ffe1;
+    --secondary-color:#261bbb;
+    --extra-color:#00d9ff;
 }
 
 body {
-    overflow-x: hidden;
+    text-align: center;
     align-items: center;
     align-content: center;
-    vertical-align: baseline;
+    background: var(--extra-color);
 }
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 100%;
+    }
 
 h1{
     font-family: "Oswald", sans-serif; 
+    font-size: var(--font-size-title);
 }
 
 h2,
@@ -30,6 +35,7 @@ h4,
 h5,
 h6 {
     font-family: "Pacifico", cursive;
+    font-size: 30px;
 }
 
 p,
@@ -42,12 +48,17 @@ label {
 }
 
 nav{
+    display: flex;
+}
+
+nav .container{
     background: var(--primary-color);
 }
 
 nav img{
-    width: 90px;
-    margin-right: 300px;
+    width: 70px;
+    margin-right: 200px;
+    margin-left: 20px;
 }
 
 nav.bg-navefra ul li{
@@ -91,8 +102,12 @@ nav.bg-navefra ul li a:hover::after{
 /* HERO */
 
 #hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hero .container{
     background: var(--secondary-color);
-    height: 530px;
 }
 
 .row{
@@ -102,9 +117,8 @@ nav.bg-navefra ul li a:hover::after{
 .info h1{
     color: #ffffff;
     font-weight: 700;
-    font-size: 90px;
-    top: 30px;
-    bottom: 2px;
+    font-size: 80px;
+    top: 20px;
 }
 
 .info p{
@@ -118,26 +132,26 @@ nav.bg-navefra ul li a:hover::after{
     border-radius: 10px;
     font-size: 18px;
     background: var(--primary-color);
-    border: 5px solid #000000;
+    border: 5px solid #ffffff;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     padding: 15px 25px;
     transition: .4s;
 }
 
 .info a:hover{
     border-color: #ffffff;
-    color: #ffffff;
+    color: #000000;
     background: var(--extra-color);
 }
 
 .cont-foto{
-    align-items: right;
+    display: flex;
 }
 
 .cont-foto img{
-    width: 450px;
-    margin-top: 160px;
+    width: 400px;
+    margin: 50px 0;
     margin-left: 25px;
 }
 
@@ -146,17 +160,21 @@ nav.bg-navefra ul li a:hover::after{
 /* ABOUT */
 
 #about{
-    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .container{
     background: #8200FF;
-    height: 650px;
 }
 
 .cont-inf h2{
     font-weight: 400;
     color: #ffffff;
-    font-size: 60px;
-    margin-top: 100px;
-    margin-left: 10px;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .cont-inf p{
@@ -168,8 +186,7 @@ nav.bg-navefra ul li a:hover::after{
     background: var(--extra-color);
     width: 270px;
     height: 350px;
-    top: 50px;
-    left: 60px;
+    margin: 60px 50px;
     position: relative;
 }
 
@@ -187,22 +204,25 @@ nav.bg-navefra ul li a:hover::after{
 /* VIDEOS */
 
 #videos{
-    background: var(--secondary-color);
-    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+#videos .container{
+    background: var(--secondary-color);
+}
 .cont-fotov img{
     width: 500px;
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin: 60px 0;
 
 }
 
 .cont-infov h3{
     color: #ffffff;
-    font-size: 70px;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .cont-infov p{
@@ -212,15 +232,16 @@ nav.bg-navefra ul li a:hover::after{
 
 .cont-redes{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .cont-redes a img{
-    width: 70px;
-    margin-top: 20px;
+    width: 50px;
+    margin: 30px 30px;
 }
 
 .cont-redes a img:first-child{
-    margin-left: 20px;
+    margin-left: 0;
 }
 
 
@@ -229,30 +250,35 @@ nav.bg-navefra ul li a:hover::after{
 /* SERVICIOS */
 
 #servicios{
-    background: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#servicios .container{
+    background: var(--primary-color);  
 }
 
 .cont-infos h2{
     color: #ffffff;
-    font-size: 60px;
-    margin-top: 100px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .cont-infos p{
     color: #ffffff;
     font-size: 18px;
-    margin-bottom: 20px;
 }
 
 .cont-infos img{
-    width: 60px;
-    margin-left: 200px;
-    margin-bottom: 100px;
+    width: 50px;
+    margin: 20px 0;
 }
 
 .cont-fotos img{
     width: 500px;
+    margin: 20px 0;
 }
 
 
@@ -263,25 +289,26 @@ nav.bg-navefra ul li a:hover::after{
 /* CONTACT */
 
 #contacto{
-    background: var(--secondary-color);
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    height: 250px;
+}
+
+#contacto .container{
+    background: var(--secondary-color);
 }
 
 #contacto h2{
-    font-size: 60px;
+    font-size: 40px;
     color: #ffffff;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 #contacto p{
     font-size: 18px;
     color: #ffffff;
-}
-
-#contacto p:nth-child(3){
-     margin-bottom: 40px;
 }
 
 #contacto p a{
@@ -300,6 +327,7 @@ footer{
     text-align: center;
 }
 
+
 footer p{
     margin: 15px 0;
     color: #3f3b3b;
@@ -315,7 +343,7 @@ footer p{
 
 @media screen and (min-width:769px) and (max-width:992px){
     nav img{
-        width: 80px;
+        width: 60px;
     }
     nav.bg-navefra ul li a:hover::after{
         width: 10%;
@@ -323,15 +351,13 @@ footer p{
     
     /* hero */
 
-    #hero{
-        height: 680px;
-    }
+    
     .info{
         text-align: center;
     }
     .info h1{
         font-size: 70px;
-        margin: 10px 0;
+        margin: 20px 0;
     }
     .info p{
         font-size: 18px;
@@ -340,29 +366,21 @@ footer p{
 
     .cont-foto img{
         width: 300px;
-        margin-left: 190px; 
-        margin-top: 30px;
+        margin: 50px auto;
     }
     
     
     
-    /* ABOUT */
-
-    #about{
-        height: 700px;
-    }
-        
-    .cont-inf{
-        text-align: center;
-    }
+    /* ABOUT */ 
     .cont-inf h2{
         font-size: 60px;
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .sombra{
         width: 200px;
         height: 250px;
-        left: 200px;
+        margin: 30px auto;
+        margin-bottom: 60px;
         position: relative;
         top: 0;
     }
@@ -370,8 +388,6 @@ footer p{
     .sombra img{
         width: 200px;
         height: 250px;
-        top: px;
-        left: -35px;
         position: absolute;
     }
     
@@ -379,11 +395,6 @@ footer p{
     
     
     /* VIDEOS */
-    
-    #videos{
-        height: 650px;
-        text-align: center;
-    }
     
     .cont-fotov img{
         width: 400px;
@@ -402,12 +413,12 @@ footer p{
     }
     
     .cont-redes a img{
-        width: 70px;
+        width: 50px;
         margin-top: 20px;
     }
     
     .cont-redes a img:first-child{
-        margin-left: 120px;
+        margin-left: 100px;
     }
     
     
@@ -415,10 +426,7 @@ footer p{
     
     /* SERVICIOS */
     
-    #servicios{
-        text-align: center;
-        height: 700px;
-    }
+    
     
     .cont-infos h2{
         font-size: 60px;
@@ -455,85 +463,70 @@ footer p{
 }
 
 @media screen and (min-width:601px) and (max-width:768px){
-    nav img{
-        width: 30px;
+
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
     }
+
     nav.bg-navefra ul li a:hover::after{
-        width: 10%;
+        width: 0;
     }
 
     /* HEADER */
     nav img{
-        width: 60px;
+        width: 50px;
     }
 
     /* HERO */
-    #hero{
-        height: 680px;
-    }
-    .info{
-        text-align: center;
-    }
+    
     .info h1{
-        font-size: 60px;
+        font-size: 50px;
         margin: 10px 0;
     }
     .info p{
         font-size: 18px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
-    .cont-foto img{
-        width: 250px;
-        margin-left: 130px;  
-        margin-top: 30px;
+    .info a{
+        font-size: 15px;
     }
+    .cont-foto img{
+        width: 260px;
+        margin: 50px auto;
+    }
+
     
     
     
     /* ABOUT */
-
-    #about{
-        height: 600px;
-    }
-        
-    .cont-inf{
-        text-align: center;
-    }
     .cont-inf h2{
         font-size: 40px;
         margin-top: 50px;
+        margin-bottom: 10px;
     }
     .sombra{
         width: 150px;
         height: 200px;
         left: 160px;
-        position: relative;
+        position: 0;
         top: 0;
     }
     
     .sombra img{
-        width: 150px;
-        height: 200px;
-        top: 35px;
-        left: -35px;
-        position: absolute;
+        width: 100%;
+        height: 100%;
     }
     
     
     
     
     /* VIDEOS */
-    
-    #videos{
-        height: 550px;
-        text-align: center;
-    }
-    
     .cont-fotov img{
         width: 300px;
         margin-top: 50px;
-    
+        margin-bottom: 20px;
     }
     
     .cont-infov h3{
@@ -558,28 +551,20 @@ footer p{
     
     
     /* SERVICIOS */
-    
-    #servicios{
-        text-align: center;
-        height: 700px;
-    }
-    
     .cont-infos h2{
         font-size: 40px;
         margin-top: 30px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     
     .cont-infos p{
         font-size: 18px;
-        margin-bottom: 25px;
-        text-align: center;
+        margin-bottom: 10px;
     }
     
     .cont-infos img{
         width: 50px;
-        margin-left: -45px;
-        margin-bottom: 30px;
+        margin: 10px auto;
     }
     
     .cont-fotos img{
@@ -593,6 +578,9 @@ footer p{
     
     /* CONTACT */
         
+    #contacto h2{
+        margin-top: 30px;
+    }
     #contacto p{
         font-size: 20px;
     }
@@ -605,55 +593,41 @@ footer p{
 /* PHONE */
 
 @media screen and (max-width: 600px){
-    nav img{
-        width: 30px;
-        margin-left: 160px;
+
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
     }
-    nav.bg-navefra ul li a:hover::after{
-        width: 10%;
-    }
-    /* HEADER */
+    
     nav img{
         width: 50px;
+        margin: 0 auto;
+    }
+    nav.bg-navefra ul li a:hover::after{
+        width: 0;
     }
 
     /* HERO */
-    #hero{
-        height: 655px;
-    }
-    .info{
-        text-align: center;
-        align-content: center;
-    }
     .info h1{
-        font-size: 50px;
-        margin: 10px 0;
+        font-size: 60px;
+        margin: 20px 0;
     }
     .info p{
         font-size: 18px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .cont-foto img{
-        width: 200px;
-        margin-left: 100px;  
-        margin-top: 20px;
+        width: 250px;
+        margin: 40px auto;
     }
     
     
     
     /* ABOUT */
-
-    #about{
-        height: 550px;
-    }
-        
-    .cont-inf{
-        text-align: center;
-    }
     .cont-inf h2{
         font-size: 40px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     .cont-inf p{
         font-size: 16px;
@@ -661,8 +635,8 @@ footer p{
     .sombra{
         width: 150px;
         height: 200px;
-        left: 130px;
-        position: relative;
+        margin: 60px auto;
+        margin-top: 20px;
         top: 0;
     }
     
@@ -671,24 +645,16 @@ footer p{
         height: 200px;
         top: 35px;
         left: -35px;
-        position: absolute;
     }
     
     
     
     
     /* VIDEOS */
-    
-    #videos{
-        height: 500px;
-        text-align: center;
-        align-items: center;
-    }
-    
     .cont-fotov img{
         width: 250px;
-        margin-top: 50px;
-    
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     
     .cont-infov h3{
@@ -702,13 +668,12 @@ footer p{
     }
     
     .cont-redes a img{
-        width: 40px;
-        margin-top: 20px;
-        margin-right: 15px;
+        width: 50px;
+        margin: 20px auto;
     }
     
     .cont-redes a img:first-child{
-        margin-left: 50px;
+        margin-left: 60px;
     }
     
     
