@@ -695,12 +695,13 @@ footer p{
     
     .cont-infos img{
         width: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         margin-left: 0;
     }
     
     .cont-fotos img{
         width: 200px;
+        margin-bottom: 30px ;
     }
     
     
